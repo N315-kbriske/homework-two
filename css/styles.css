@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  height: 720px;
+  background: linear-gradient(to right, #180404, #7a0000, #7a0000, #180404);
+  background-size: 400% 400%;
+  animation: animate-background 10s infinite ease-in-out;
+}
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  width: 100%;
+  height: 52px;
+  background-color: rgb(55, 55, 55);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav #logo {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/waveform-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1.8px solid white;
+  border-radius: 6px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: larger;
+}
+
+.waveformGif {
+  width: 100%;
+  height: 125px;
+}
+
+.home-header {
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 85px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.tile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tile-container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tile-container .row .tile {
+  width: 650px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-container .about-header {
+  font-family: monospace;
+  font-size: 50px;
+  color: white;
+  margin: 55px 0px 20px 0px;
+}
+.about-container .about-content {
+  border-radius: 7px;
+  padding: 10px;
+  text-align: left;
+  max-width: 850px;
+  height: 150px;
+  font-family: monospace;
+  font-size: 18px;
+  color: rgb(241, 241, 241);
+}
+
+.comparison {
+  width: 95%;
+  height: 300px;
+  background-image: url("../images/mp3vflac.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 15px auto 0px auto;
+}
+
+footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+
+.productHeader {
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 85px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.top {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 90px;
+}
+.top .product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  font-family: monospace;
+  font-size: larger;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 7px;
+}
+.top .product .productImage {
+  width: 115px;
+  height: 150px;
+}
+.top .product .productDescription {
+  margin-bottom: 20px;
+}
+.top .product .flavor {
+  font-size: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact-top {
+  width: 100%;
+  height: 150px;
+  font-family: monospace;
+  font-size: 65px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.officeImage {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/office.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 50%;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 350px;
+  height: 350px;
+  margin: 0px auto;
+}
+.contact-form .fName {
+  width: 350px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+}
+.contact-form .fName::placeholder {
+  padding-left: 10px;
+  font-family: monospace;
+}
+.contact-form .lName {
+  width: 350px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+}
+.contact-form .lName::placeholder {
+  padding-left: 10px;
+  font-family: monospace;
+}
+.contact-form .email {
+  width: 350px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+}
+.contact-form .email::placeholder {
+  padding-left: 10px;
+  font-family: monospace;
+}
+.contact-form .message {
+  width: 350px;
+  height: 150px;
+  border: none;
+  border-radius: 7px;
+}
+.contact-form .message::placeholder {
+  text-align: center;
+  font-family: monospace;
+}
+.contact-form .submit {
+  width: 250px;
+  height: 35px;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  font-family: monospace;
+}
+
+/*# sourceMappingURL=styles.css.map */
